@@ -62,9 +62,18 @@ class Handler:
         print("/")
         changeBuff(v='/')
         
-    def oncal(self, un):
+    def oncal(self, out):
         print("result : ")
-
+        textv2 = builder.get_object("out")
+        textv1 = builder.get_object("incal")
+        textbuffer = textv1.get_buffer()
+        textbuffer2 = textv2.get_buffer()
+        start_iter = textbuffer.get_start_iter()
+        end_iter = textbuffer.get_end_iter()
+        text = textbuffer.get_text(start_iter, end_iter, True)
+        res = eval(text)
+        textbuffer2.set_text('=' + str(res))
+    
 def changeBuff(v):
     textv1 = builder.get_object("incal")
     textbuffer = textv1.get_buffer()
