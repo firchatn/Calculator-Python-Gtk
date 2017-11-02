@@ -47,6 +47,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <signal name="clicked" handler="addtrois" swapped="no"/>
           </object>
           <packing>
             <property name="left_attach">2</property>
@@ -59,6 +60,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <signal name="clicked" handler="onplus" swapped="no"/>
           </object>
           <packing>
             <property name="left_attach">3</property>
@@ -71,6 +73,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <signal name="clicked" handler="addhuit" swapped="no"/>
           </object>
           <packing>
             <property name="left_attach">1</property>
@@ -85,6 +88,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <signal name="clicked" handler="addquatre" swapped="no"/>
           </object>
           <packing>
             <property name="top_attach">1</property>
@@ -97,6 +101,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <signal name="clicked" handler="addcinq" swapped="no"/>
           </object>
           <packing>
             <property name="left_attach">1</property>
@@ -111,6 +116,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <signal name="clicked" handler="addsix" swapped="no"/>
           </object>
           <packing>
             <property name="left_attach">2</property>
@@ -125,6 +131,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <signal name="clicked" handler="onmoin" swapped="no"/>
           </object>
           <packing>
             <property name="left_attach">3</property>
@@ -139,6 +146,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <signal name="clicked" handler="addsept" swapped="no"/>
           </object>
           <packing>
             <property name="top_attach">2</property>
@@ -151,6 +159,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <signal name="clicked" handler="addneuf" swapped="no"/>
           </object>
           <packing>
             <property name="left_attach">2</property>
@@ -165,6 +174,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <signal name="clicked" handler="onfois" swapped="no"/>
           </object>
           <packing>
             <property name="left_attach">3</property>
@@ -179,6 +189,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <signal name="clicked" handler="onsur" swapped="no"/>
           </object>
           <packing>
             <property name="left_attach">3</property>
@@ -193,6 +204,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <signal name="clicked" handler="oncal" swapped="no"/>
           </object>
           <packing>
             <property name="left_attach">3</property>
