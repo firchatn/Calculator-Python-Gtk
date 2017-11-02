@@ -5,5 +5,5 @@ git clone https://github.com/firchatn/calculator-python
 cd calculator-python
 python calcul.py
 ### Result
-![Alt text](img.png)
+![Alt text](img/img.png)
 
