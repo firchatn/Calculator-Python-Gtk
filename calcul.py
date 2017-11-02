@@ -73,6 +73,15 @@ class Handler:
         text = textbuffer.get_text(start_iter, end_iter, True)
         res = eval(text)
         textbuffer2.set_text('=' + str(res))
+    def onclean(self, clear):
+        print("clean")
+        textv2 = builder.get_object("out")
+        textv1 = builder.get_object("incal")
+        textbuffer = textv1.get_buffer()
+        textbuffer2 = textv2.get_buffer()
+        textbuffer2.set_text('')
+        textbuffer.set_text('')
+        
     
 def changeBuff(v):
     textv1 = builder.get_object("incal")

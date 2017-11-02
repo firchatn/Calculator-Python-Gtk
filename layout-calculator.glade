@@ -244,6 +244,7 @@
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
             <property name="image_position">bottom</property>
+            <signal name="clicked" handler="onclean" swapped="no"/>
           </object>
           <packing>
             <property name="top_attach">4</property>
