@@ -6,7 +6,23 @@ class Handler:
     def onDeleteWindow(self, *args):
         Gtk.main_quit(*args)
 
-    def onButtonPressed(self, un):
+    def addun(self, un):
+        print("Hello World!")
+    def adddeux(self, deux):
+        print("Hello World22!")
+    def addtrois(self, un):
+        print("Hello World!")
+    def addquatre(self, un):
+        print("Hello World!")
+    def addciq(self, un):
+        print("Hello World!")
+    def addsix(self, un):
+        print("Hello World!")
+    def addsept(self, un):
+        print("Hello World!")
+    def addhuit(self, un):
+        print("Hello World!")
+    def addneuf(self, un):
         print("Hello World!")
 
 builder = Gtk.Builder()
