@@ -18,7 +18,7 @@ class Handler:
         changeBuff(v='2')
         
     def addtrois(self, trois):
-        print("Hello World!")
+        print("3")
         changeBuff(v='3')
         
     def addquatre(self, quatre):
@@ -68,7 +68,10 @@ class Handler:
 def changeBuff(v):
     textv1 = builder.get_object("incal")
     textbuffer = textv1.get_buffer()
-    textbuffer.set_text(v)
+    start_iter = textbuffer.get_start_iter()
+    end_iter = textbuffer.get_end_iter()
+    text = textbuffer.get_text(start_iter, end_iter, True)
+    textbuffer.set_text(text + v)
 
 builder = Gtk.Builder()
 builder.add_from_file("layout-calculator.glade")
