@@ -63,7 +63,7 @@ class Handler:
         changeBuff(v='/')
         
     def oncal(self, out):
-        print("result : ")
+        print("result")
         textv2 = builder.get_object("out")
         textv1 = builder.get_object("incal")
         textbuffer = textv1.get_buffer()
@@ -97,5 +97,6 @@ builder.connect_signals(Handler())
 
 window = builder.get_object("window1")
 window.show_all()
+window.connect("delete-event", Gtk.main_quit)
 
 Gtk.main()
