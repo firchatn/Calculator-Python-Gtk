@@ -8,6 +8,7 @@ class Handler:
 
     def addun(self, un):
         print("Hello World!")
+        incal.set_buffer("1")
     def adddeux(self, deux):
         print("Hello World22!")
     def addtrois(self, un):
@@ -23,6 +24,18 @@ class Handler:
     def addhuit(self, un):
         print("Hello World!")
     def addneuf(self, un):
+        print("Hello World!")
+        
+    def onplus(self, un):
+        print("Hello World!")
+    def onmoin(self, un):
+        print("Hello World!")
+    def onfois(self, un):
+        print("Hello World!")
+    def onsur(self, un):
+        print("Hello World!")
+        
+    def oncal(self, un):
         print("Hello World!")
 
 builder = Gtk.Builder()
