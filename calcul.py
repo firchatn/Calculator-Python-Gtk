@@ -2,41 +2,73 @@ import gi
 gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
 
+
+
+
 class Handler:
     def onDeleteWindow(self, *args):
         Gtk.main_quit(*args)
 
     def addun(self, un):
-        print("Hello World!")
-        incal.set_buffer("1")
-    def adddeux(self, deux):
-        print("Hello World22!")
-    def addtrois(self, un):
-        print("Hello World!")
-    def addquatre(self, un):
-        print("Hello World!")
-    def addciq(self, un):
-        print("Hello World!")
-    def addsix(self, un):
-        print("Hello World!")
-    def addsept(self, un):
-        print("Hello World!")
-    def addhuit(self, un):
-        print("Hello World!")
-    def addneuf(self, un):
-        print("Hello World!")
+        print("1")
+        changeBuff(v='1')
         
-    def onplus(self, un):
+    def adddeux(self, deux):
+        print("2")
+        changeBuff(v='2')
+        
+    def addtrois(self, trois):
         print("Hello World!")
-    def onmoin(self, un):
-        print("Hello World!")
-    def onfois(self, un):
-        print("Hello World!")
-    def onsur(self, un):
-        print("Hello World!")
+        changeBuff(v='3')
+        
+    def addquatre(self, quatre):
+        print("4")
+        changeBuff(v='4')
+        
+    def addcinq(self, cinq):
+        print("5")
+        changeBuff(v='5')
+        
+    def addsix(self, six):
+        print("6")
+        changeBuff(v='6')
+    
+    def addsept(self, sept):
+        print("7")
+        changeBuff(v='7')
+        
+    def addhuit(self, huit):
+        print("8")
+        changeBuff(v='8')
+        
+    def addneuf(self, neuf):
+        print("9")
+        changeBuff(v='9')
+
+        
+    def onplus(self, plus):
+        print("+")
+        changeBuff(v='+')
+        
+    def onmoin(self, moin):
+        print("-")
+        changeBuff(v='-')
+        
+    def onfois(self, fois):
+        print("*")
+        changeBuff(v='*')
+        
+    def onsur(self, sur):
+        print("/")
+        changeBuff(v='/')
         
     def oncal(self, un):
-        print("Hello World!")
+        print("result : ")
+
+def changeBuff(v):
+    textv1 = builder.get_object("incal")
+    textbuffer = textv1.get_buffer()
+    textbuffer.set_text(v)
 
 builder = Gtk.Builder()
 builder.add_from_file("layout-calculator.glade")
