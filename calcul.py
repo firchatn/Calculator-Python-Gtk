@@ -88,6 +88,7 @@ def changeBuff(v):
     end_iter = textbuffer.get_end_iter()
     text = textbuffer.get_text(start_iter, end_iter, True)
     textbuffer.set_text(text + v)
+    
 
 builder = Gtk.Builder()
 builder.add_from_file("layout-calculator.glade")
